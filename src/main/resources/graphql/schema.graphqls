@@ -1,0 +1,20 @@
+type Query {
+  catBreed(id: String!): CatBreed
+  students: [Student!]!
+}
+
+type CatBreed {
+  id: ID
+  name: String
+  temperament: String
+  origin: String
+  description: String
+}
+
+type Student {
+  id: ID!
+  name: String
+  career: String
+  semester: Int
+  gpa: Float
+}
