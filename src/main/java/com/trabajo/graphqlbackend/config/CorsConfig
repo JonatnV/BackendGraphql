@@ -17,6 +17,7 @@ public class CorsConfig {
                         .allowedOrigins("https://front-graphql-six.vercel.app") // tu frontend
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
+                        .allowCredentials(true);
             }
         };
     }
