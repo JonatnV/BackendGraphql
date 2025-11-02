@@ -16,7 +16,7 @@ public class CorsConfig {
                 registry.addMapping("/**") // aplica a todos los endpoints
                         .allowedOrigins("https://front-graphql-six.vercel.app") // tu frontend
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedHeaders("*");
+                        .allowedHeaders("*")
                         .allowCredentials(true);
             }
         };
