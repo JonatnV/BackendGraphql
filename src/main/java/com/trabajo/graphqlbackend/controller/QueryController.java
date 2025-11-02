@@ -14,6 +14,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 @Controller
+@CrossOrigin(origins = "https://front-graphql-six.vercel.app")
 public class QueryController {
     private final StudentRepository studentRepo;
     private final RestTemplate restTemplate;
@@ -67,3 +68,4 @@ public class QueryController {
         return null;
     }
 }
+
