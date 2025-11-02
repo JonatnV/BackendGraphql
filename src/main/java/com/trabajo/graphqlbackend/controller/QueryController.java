@@ -6,6 +6,7 @@ import com.trabajo.graphqlbackend.model.Student;
 import com.trabajo.graphqlbackend.repository.StudentRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.http.*;
@@ -68,4 +69,5 @@ public class QueryController {
         return null;
     }
 }
+
 
